@@ -1,0 +1,22 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FrameGen by DJ_Laser</title>
+</head>
+<body>
+    <input id = "textbox"></input>
+    <button type="button" id="button">Open with FrameGen</button>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            let button = document.getElementById("button");
+            let textbox = document.getElementById("textbox");
+
+            button.addEventListener("click", () => {
+                window.open("dj-laser.github.io/FrameGen/frame?site=" + textbox.value);
+            }, false);
+        });
+    </script>
+  </body>
+</html>
