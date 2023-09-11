@@ -14,9 +14,49 @@
             height: 100%;
             border-style: none;
         }
+
+        .navbar {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+
+        .navbar-bg {
+            display: inline-flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            gap: 2px;
+            padding: 3px;
+            background-color: #dfdfdf;
+            border-style: solid;
+            border-width: 1px;
+            border-radius: 4px;
+            border-color: #6c6c6c;
+        }
+
+        #textbox {
+            min-width: 75%;
+        }
+
+        #textbox, #button {
+            background-color: white;
+            border-style: solid;
+            border-width: 1px;
+            border-color: black;
+            border-radius: 2px;
+        }
     </style>
 </head>
 <body>
+    <div class="navbar">
+        <div class="navbar-bg">
+            <input id = "textbox"></input>
+            <button type="button" id="button">Open</button>
+        </div>
+    </div>
     <iframe id="frame"></iframe>
     <script>
         let params = (new URL(document.location)).searchParams;
