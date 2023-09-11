@@ -1,2 +1,2 @@
 # FrameGen
-An Iframe Generator. If you know you know.
+An iframe generator. If you know you know.
